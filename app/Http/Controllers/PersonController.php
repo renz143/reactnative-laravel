@@ -116,31 +116,4 @@ class PersonController extends Controller
       return response([], 200);
     }
   }
-
-  /**
-   *   
-   *  For Admin UI
-   *
-   **/
-
-  /**
-   * Show the form for creating a new resource.
-   *
-   * @return \Illuminate\Http\Response
-   */
-  public function create()
-  {
-    //
-  }
-
-  /**
-   * Show the form for editing the specified resource.
-   *
-   * @param  \App\person  $person
-   * @return \Illuminate\Http\Response
-   */
-  public function edit(Person $person)
-  {
-    //
-  }
 }

@@ -1,21 +1,23 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+## Run in Local Machine
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+After cloning run
 
-## About Project
+```
+composer install
 
-Simple crud exemple of RESTful API back-end application using Laravel.
-Version used for this project is 5.7.
+php artisan key:generate
 
-## Repo Author
+php artisan migrate:fresh --seed
 
-Mohamed Aimane Skhairi
+php artisan serve
+```
 
-## License
+## API Endpoints
 
-This project is open-sourced software licensed under the [GPL-3.0 license](https://opensource.org/licenses/GPL-3.0).
+```
+GET http://localhost:8000/api/persons/
+GET http://localhost:8000/api/persons/{id}
+POST http://localhost:8000/api/persons/
+PUT http://localhost:8000/api/persons/{id}
+DELETE http://localhost:8000/api/persons/{id}
+```
